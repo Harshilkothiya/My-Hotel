@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* about page */
+
+.facilities {
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: Semi Bold;
+  font-size: 40px;
+  opacity: 1;
+  justify-content: center;
+}
+.icons {
+  display: flex;
+}
+.section {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about .section .list {
+  margin: 25px;
+  height: 350px;
+  width: 365px;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.about .section .list .image {
+  width: 100%;
+}
+
+.about .section .list .image img {
+  border-radius: 20px;
+  width: 100%;
+  height: 245px;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.part {
+  margin-top: 5px;
+  padding-left: 6px;
+  height: 90px;
+}
+
+.btn {
+  padding-bottom: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.btn > button {
+  font-family: "Montserrat", sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: #ffc700;
+  font-size: larger;
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid;
+  width: 150px;
+  height: 49px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn > button:hover {
+  background-color: white;
+  color: #ffc700;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  padding: 3px;
+}
+
+.pera {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+@media (min-width: 850px) {
+  .about .section .list .image img:hover {
+    border-radius: 10px;
+    width: 375px;
+    height: 255px;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 776px) {
+  .facilities {
+    font-size: 30px;
+  }
+}
+@media (max-width: 691px) {
+  .icons{
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  .facilities {
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+  }
+  .about .section .list {
+    margin-top: 0px;
+  }
+}
+

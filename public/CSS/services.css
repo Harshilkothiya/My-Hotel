@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.information {
+  color: white;
+  display: flex;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.information1 {
+  color: #ffc700;
+  font-size: 50px;
+  width: fit-content;
+  text-align: center;
+  margin-right: 25px;
+}
+
+.information2 {
+  font-size: larger;
+  margin-left: 35px;
+}
+
+.services {
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0.84)),
+    url("../images/v33_114.png");
+  background-size: cover;
+  height: auto;
+}
+
+.mainarea {
+  margin: auto;
+  width: 80%;
+  height: auto;
+}
+.box1 {
+  height: 600px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.box2 {
+  height: 600px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.box1 .bigarea {
+  border-radius: 40px;
+  position: relative;
+  height: 100%;
+  width: 75%;
+}
+
+.box1 .smallarea {
+  background-color: white;
+  border-radius: 0 50px 0 50px;
+  opacity: 0.8;
+  height: 60%;
+  width: 40%;
+  position: absolute;
+  padding: 35px;
+  top: 20%;
+  left: 60%;
+}
+
+.box2 .bigarea {
+  border-radius: 40px;
+  position: absolute;
+  height: 100%;
+  width: 75%;
+  right: 0%;
+}
+
+.box2 .smallarea {
+  border-radius: 50px 0 50px 0;
+  background-color: white;
+  padding: 35px;
+  opacity: 0.8;
+  height: 60%;
+  width: 40%;
+  position: relative;
+  top: 20%;
+  left: 0%;
+}
+
+#b1 .bigarea {
+  background: url("../images/v33_118.png") no-repeat center/cover;
+}
+
+#b2 .bigarea {
+  background: url("../images/gym2.jpg") no-repeat center/cover;
+}
+
+#b3 .bigarea {
+  background: url("../images/swim.jpg") no-repeat center/cover;
+}
+#b4 .bigarea {
+  background: url("../images/food.jpg") no-repeat center/cover;
+}
+#b4 {
+  margin-bottom: 0;
+}
+
+#b1 .bigarea,
+#b3 .bigarea {
+  border-top: 4px solid #ffc700;
+  border-left: 4px solid #ffc700;
+  border-bottom: 4px solid #ffc700;
+}
+
+#b2 .bigarea,
+#b4 .bigarea {
+  border-top: 4px solid #ffc700;
+  border-right: 4px solid #ffc700;
+  border-bottom: 4px solid #ffc700;
+}
+
+.smallarea .title {
+  color: #ffc700;
+  padding: 10px;
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 0;
+}
+
+.smallarea .part {
+  text-align: justify;
+  line-height: 35px;
+  padding: 10px;
+  font-size: 18px;
+}
+
+@media (max-width: 1025px) {
+  .information1 {
+    width: fit-content;
+  }
+  .information2 {
+    width: auto;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1250px) {
+  .box1 .smallarea,
+  .box2 .smallarea {
+    height: 60%;
+    top: 20%;
+    padding: 30px;
+  }
+  .box1 .smallarea .part,
+  .box2 .smallarea .part {
+    line-height: normal;
+    line-height: 30px;
+    font-size: 16.5px;
+  }
+}
+@media (min-width: 900px) and (max-width: 1000px) {
+  .box1 .smallarea,
+  .box2 .smallarea {
+    height: 70%;
+    top: 15%;
+    padding: 25px;
+  }
+  .box1 .smallarea .part,
+  .box2 .smallarea .part {
+    line-height: normal;
+    line-height: 25px;
+    font-size: 16.5px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 900px) {
+  .box1 .smallarea,
+  .box2 .smallarea {
+    height: 78%;
+    top: 11%;
+    padding: 20px;
+  }
+  .box1 .smallarea .part,
+  .box2 .smallarea .part {
+    line-height: normal;
+    line-height: 30px;
+    font-size: 16.5px;
+  }
+}
+
+
+
+@media (max-width: 800px) {
+  .information {
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+  .information2 {
+    width: 100%;
+    margin: 0%;
+  }
+  .information1 {
+    width: 100%;
+    margin: 0%;
+  }
+  .smallarea .part {
+    line-height: 23.5px;
+  }
+
+  .box2 .bigarea,
+  .box1 .bigarea {
+    border: 4px solid #ffc700;
+    width: 100%;
+  }
+  .box1 .smallarea,
+  .box2 .smallarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 65%;
+    width: 60%;
+    padding: 5px;
+    overflow: hidden;
+    top: 20%;
+    left: 17%;
+  }
+  .smallarea .part {
+    text-align: center;
+    line-height: 40px;
+    font-size: 15px;
+  }
+  .smallarea .title {
+    font-size: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .smallarea .part {
+    line-height: normal;
+  }
+  .smallarea .title{
+    font-size: 25px;
+  }
+}

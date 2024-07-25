@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.noscroll {
+  overflow: hidden;
+}
+.b {
+  border: 2px solid black;
+}
+.navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  height: 10vh;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: rgb(50 50 50 / 43%) 0px 1.5px 10px;
+}
+
+.resnavbar {
+  display: none;
+}
+.logo {
+  overflow-y: hidden;
+  width: 10%;
+}
+.logo img {
+  margin-left: 20px;
+  height: 100%;
+}
+.links {
+  width: 70%;
+}
+.links ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+.links ul li a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  margin-right: 40px;
+}
+.links ul li a:hover {
+  color: rgb(111, 110, 110);
+}
+.selectedlink {
+  color: rgb(111, 110, 110) !important;
+}
+.btns {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 20%;
+  overflow-y: hidden;
+}
+
+.btns button {
+  font-family: "Poppins", sans-serif;
+  border-radius: 20px;
+  margin: 17px;
+  height: 55%;
+  width: 92%;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease-in-out;
+}
+
+.btns a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.signin{
+  border: 0;
+  background-color: #ffc700;
+  color: white;
+}
+
+.register{
+  border: 1px solid #ffc700;
+  color: #ffc700;
+  background: none;
+}
+
+.btns .signin:hover {
+  border: 1px solid #ffc700;
+  color: #ffc700;
+  background: white;
+}
+.btns .register:hover {
+  background-color: #ffc700;
+  color: white;
+}
+
+@media (max-width: 925px) {
+  .resnavbar {
+    display: block;
+  }
+  .navbar {
+    display: none;
+  }
+  .logo {
+    width: 50%;
+  }
+  .logo img {
+    margin-left: 20px;
+    width: 45px;
+  }
+  .ham {
+    margin-right: 20px;
+  }
+  .reslogo {
+    /* box-shadow: rgb(50 50 50 / 45%) 0px 1.5px 10px;
+    background: white;  
+    position: fixed; */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .panel {
+    position: fixed;
+    width: 52%;
+    height: auto;
+    right: -1000px;
+    top: 45px;
+    background-color: rgba(255, 255, 255, 0.841);
+    transition: right 0.3s ease;
+    z-index: 2;
+  }
+  .links ul {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    margin: 25px;
+  }
+  .btns {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .btns button {
+    margin: 5px;
+    width: 150px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .navbar {
+    height: 6vh;
+  }
+  .links ul li a {
+    margin-right: 25px;
+    font-size: 17px;
+  }
+  .logo {
+    margin-right: 20px;
+  }
+  .btns {
+    width: 25%;
+  }
+  .btns button {
+    margin: 5px;
+    margin-right: 15px;
+  }
+  .booking {
+    height: 20% !important;
+  }
+  .footer {
+    height: 50vh !important;
+  }
+  .sub {
+    top: -62px !important;
+  }
+}

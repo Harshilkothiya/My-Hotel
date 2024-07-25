@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/services.css">
+    <link rel="stylesheet" href="/CSS/navbar.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <title>Services</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="/Images/logo.webp" alt="">
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/hotel/services" class="selectedlink">Services</a></li>
+                <li><a href="/hotel/about">About us</a></li>
+                <li><a href="/hotel/contact">Contact us</a></li>
+                <li><a href="/hotel/gallery">Gallery</a></li>
+                <li><a href="/hotel/testimonial">Testimonial</a></li>
+            </ul>
+        </div>
+        <div class="btns">
+            <button class="register"><a href="/user/register">Register</a></button>
+            <button class="signin"><a href="/user/signin">Sign in</a></button>
+        </div>
+    </div>
+    <div class="resnavbar">
+        <div class="reslogo logo">
+            <img src="/Images/logo.webp" alt="">
+            <img class="ham" onclick="hamburger()" src="/Images/hamburger.png" alt="">
+        </div>
+        <div class="panel">
+            <div class="links">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/hotel/services" class="selectedlink">Services</a></li>
+                    <li><a href="/hotel/about">About us</a></li>
+                    <li><a href="/hotel/contact">Contact us</a></li>
+                    <li><a href="/hotel/gallery">Gallery</a></li>
+                    <li><a href="/hotel/testimonial">Testimonial</a></li>
+                </ul>
+            </div>
+            <div class="btns">
+                <button class="register"><a href="/user/register">Register</a></button>
+                <button class="signin"><a href="/user/signin">Sign in</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="services" id="services">
+        <div class="information">
+            <div class="information1">Services</div>
+            <div class="information2">"Experience unparalleled luxury and personalized service at Our Place,
+                where every stay is tailored to exceed your expectations."</div>
+
+        </div>
+        <div class="mainarea">
+            <div class="box1" id="b1">
+                <div class="bigarea"></div>
+                <div class="smallarea">
+                    <div class="title">
+                        COMFORT ROOMS
+                    </div>
+                    <div class="part">
+                        Indulge in the ultimate comfort of our best bedroom, featuring plush bedding, elegant decor,
+                        and
+                        breathtaking views.
+                        Our premier bedroom offers a serene retreat with luxurious amenities, ensuring a restful and
+                        rejuvenating stay
+                    </div>
+                </div>
+            </div>
+            <div class="box2" id="b2">
+                <div class="bigarea"></div>
+                <div class="smallarea">
+                    <div class="title">
+                        GYM
+                    </div>
+                    <div class="part">Stay fit and energized in our state-of-the-art hotel gym, equipped with the
+                        latest
+                        fitness
+                        technology. Enjoy a seamless workout experience in a space designed for both intensity and
+                        relaxation.</div>
+                </div>
+            </div>
+            <div class="box1" id="b3">
+                <div class="bigarea"></div>
+                <div class="smallarea">
+                    <div class="title">SWIMMING POOL</div>
+                    <div class="part">
+                        Escape to our sparkling swimming pool, perfect for a refreshing dip or leisurely swim.
+                        Surrounded by
+                        lush landscapes, it offers a serene and luxurious ambiance. Relax on comfortable loungers
+                        and
+                        enjoy
+                        exceptional poolside service
+                    </div>
+
+                </div>
+            </div>
+            <div class="box2" id="b4">
+                <div class="bigarea"></div>
+                <div class="smallarea">
+                    <div class="title">FOOD AND BEVERAGE</div>
+                    <div class="part">Indulge in gourmet dining and exceptional drinks with our exquisite food and
+                        beverage offerings.
+                        Enjoy fresh, locally-sourced ingredients and impeccable service in a stylish, elegant
+                        setting.
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('./Partials/footer') %>
+
+        <script src="/JS/nav.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.slider {
+  background-color: #1e1d1de7;
+}
+
+.slider .comment {
+  
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  padding: 10px;
+  color: white;
+}
+.slider section {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.slider section .container {
+  width: 90%;
+  height: 575px;
+  padding: 15px;
+}
+
+.slider section .container .wrapper .card {
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.slider section .container .wrapper .card > .content {
+  background-color: #1e1d1dda;
+  height: 90px;
+  color: white;
+  margin-bottom: 5px;
+  border-radius: 20px;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.slider section .container .wrapper .card > .person {
+  display: flex;
+  margin-bottom: 13px;
+}
+
+.slider section .container .wrapper .card .person .userinfo {
+  width: 100%;
+  margin-left: 10px;
+}
+.slider section .container .wrapper .card .person .userinfo div {
+  font-family: "Montserrat", sans-serif;
+}
+.slider section .container .wrapper .card .person .photo {
+  height: 89px;
+  width: 115px;
+  background: #ffc700;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.slider section .container .wrapper .card .person .photo img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+.review {
+  width: 100%;
+  height: 64%;
+}
+.review .list {
+  width: 100%;
+  height: 100%;
+}
+
+.review .list .image {
+  width: 100%;
+  height: 80%;
+}
+
+.review .list img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.review .list p {
+  padding: 5px;
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Montserrat", sans-serif
+}
+.swiper-pagination {
+  position: absolute;
+}
+
+.swiper-pagination-bullet {
+  height: 7px;
+  width: 7px;
+  border-radius: 25px;
+  background: #ffffff;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #f4f4f4;
+  transition: all 0.3s linear;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #7d7b7d;
+}
+
+@media (max-widht: 800px) {
+  .wrapper .card {
+    margin-right: 16px;
+  }
+}

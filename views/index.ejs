@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel XYZ</title>
+    <link rel="stylesheet" href="/CSS/navbar.css">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="logo">
+                <img src="/Images/logo.webp" alt="">
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="/" class="selectedlink">Home</a></li>
+                    <li><a href="/hotel/services">Services</a></li>
+                    <li><a href="/hotel/about">About us</a></li>
+                    <li><a href="/hotel/contact">Contact us</a></li>
+                    <li><a href="/hotel/gallery">Gallery</a></li>
+                    <li><a href="/hotel/testimonial">Testimonial</a></li>
+                </ul>
+            </div>
+            <div class="btns">
+                <button class="register"><a href="/user/register">Register</a></button>
+                <button class="signin"><a href="/user/signin">Sign in</a></button>
+            </div>
+        </div>
+        <div class="resnavbar">
+            <div class="reslogo logo">
+                <img src="/Images/logo.webp" alt="">
+                <img class="ham" onclick="hamburger()" src="/Images/hamburger.png" alt="">
+            </div>
+            <div class="panel">
+                <div class="links">
+                    <ul>
+                        <li><a href="/" class="selectedlink">Home</a></li>
+                        <li><a href="/hotel/services">Services</a></li>
+                        <li><a href="/hotel/about">About us</a></li>
+                        <li><a href="/hotel/contact">Contact us</a></li>
+                        <li><a href="/hotel/gallery">Gallery</a></li>
+                        <li><a href="/hotel/testimonial">Testimonial</a></li>
+                    </ul>
+                </div>
+                <div class="btns">
+                    <button class="register"><a href="/user/register">Register</a></button>
+                    <button class="signin"><a href="/user/signin">Sign in</a></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- index -->
+        <div class="container">
+            <div class="heading">
+                <div class="head1">
+                    Welcome to [Hotel name]
+                </div>
+                <p>Experience luxury and comfort at [Hotel Name], located in the heart of [City Name]. Our elegantly
+                    designed rooms, top-notch
+                    amenities, and exceptional service ensure a memorable stay. Enjoy our gourmet dining, relax in our
+                    spa, or explore the city's vibrant
+                    attractions just steps away. Book your stay with us today for an unparalleled experience.</p>
+            </div>
+            <div class="booking">
+                <div class="arrival">
+                    <span>ARRIVAL</span>
+                    <input type="date" class="selectedstyle">
+                </div>
+                <div class="depart">
+                    <span>DEPARTURE</span>
+                    <input type="date" class="selectedstyle">
+                </div>
+                <div class="person">
+                    <span>NO OF PERSONS</span>
+                    <select id="person" class="selectedstyle">
+                        <option value="Person">Person</option>
+                        <option value="Person">1</option>
+                        <option value="Person">2</option>
+                        <option value="Person">3</option>
+                        <option value="Person">4</option>
+                        <option value="Person">5</option>
+                        <option value="Person">6</option>
+                        <option value="Person">7</option>
+                        <option value="Person">8</option>
+                        <option value="Person">9</option>
+                        <option value="Person">10</option>
+                    </select>
+                </div>
+                <div class="check">
+                    <button class="selectedstyle">Check Availability</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('./Partials/footer') %>
+        <script src="/JS/nav.js"></script>
+</body>
+
+</html>

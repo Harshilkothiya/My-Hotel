@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/CSS/contact.css">
+    <link rel="stylesheet" href="/CSS/navbar.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+
+</head>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <img src="/Images/logo.webp" alt="">
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/hotel/services">Services</a></li>
+                <li><a href="/hotel/about">About us</a></li>
+                <li><a href="/hotel/contact" class="selectedlink">Contact us</a></li>
+                <li><a href="/hotel/gallery">Gallery</a></li>
+                <li><a href="/hotel/testimonial">Testimonial</a></li>
+            </ul>
+        </div>
+        <div class="btns">
+            <button class="register"><a href="/user/register">Register</a></button>
+            <button class="signin"><a href="/user/signin">Sign in</a></button>
+
+        </div>
+    </div>
+    <div class="resnavbar">
+        <div class="reslogo logo">
+            <img src="/Images/logo.webp" alt="">
+            <img class="ham" onclick="hamburger()" src="/Images/hamburger.png" alt="">
+        </div>
+        <div class="panel">
+            <div class="links">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/hotel/services">Services</a></li>
+                    <li><a href="/hotel/about">About us</a></li>
+                    <li><a href="/hotel/contact" class="selectedlink">Contact us</a></li>
+                    <li><a href="/hotel/gallery">Gallery</a></li>
+                    <li><a href="/hotel/testimonial">Testimonial</a></li>
+                </ul>
+            </div>
+            <div class="btns">
+                <button class="register"><a href="/user/register">Register</a></button>
+                <button class="signin"><a href="/user/signin">Sign in</a></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- contect -->
+    <div class="con-box" id="Contact">
+        <div class="container2">
+            <div class="content">
+                <div class="left-side">
+                    <div class="address details2" style="margin-top: 20px;">
+                        <i class="fa-solid fa-map-pin"></i>
+                        <div class="topic">Address</div>
+                        <div class="text-one">Surkhet, NP12</div>
+                        <div class="text-two">Birendranagar 06</div>
+                    </div>
+                    <div class="phone details2">
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="topic">Phone</div>
+                        <div class="text-one"><a href="tel:+">+0098 9893 5647</a></div>
+                        <div class="text-two"><a href="tel:+">+0096 3434 5678</a></div>
+                    </div>
+                    <div class="details2">
+                        <i class="fas fa-envelope"></i>
+                        <div class="topic">Email</div>
+                        <div class="text-one"><a href="mailto:">clumoss@gmail.com</a></div>
+                        <div class="text-two"><a href="mailto:">hotelname@gmail.com</a></div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="topic-text">Send us a message</div>
+                    <form action="https://formspree.io/f/myyrrwol" method="POST">
+                        <div class="input-box">
+                            <input type="text" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-box">
+                            <input type="mail" id="mail" placeholder="Enter your email" required>
+                        </div>
+                        <div class="input-box message-box">
+                            <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"
+                                required></textarea>
+                        </div>
+                        <div class="button">
+                            <input type="submit" name="Send" value="Send Now" onclick=sendMail()>
+                            <!-- <button onclick="sendMail()">submit</button> -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('./Partials/footer') %>
+        <script src="/JS/nav.js"></script>
+        <script src="/JS/contect.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+</body>
+
+</html>

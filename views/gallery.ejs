@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="/CSS/gallery.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="/Images/logo.webp" alt="">
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/hotel/services">Services</a></li>
+                <li><a href="/hotel/about">About us</a></li>
+                <li><a href="/hotel/contact">Contact us</a></li>
+                <li><a href="/hotel/gallery" class="selectedlink">Gallery</a></li>
+                <li><a href="/hotel/testimonial">Testimonial</a></li>
+            </ul>
+        </div>
+        <div class="btns">
+            <button class="register"><a href="/user/register">Register</a></button>
+            <button class="signin"><a href="/user/signin">Sign in</a></button>
+        </div>
+    </div>
+    <div class="resnavbar">
+        <div class="reslogo logo">
+            <img src="/Images/logo.webp" alt="">
+            <img class="ham" onclick="hamburger()" src="/Images/hamburger.png" alt="">
+        </div>
+        <div class="panel">
+            <div class="links">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/hotel/services">Services</a></li>
+                    <li><a href="/hotel/about">About us</a></li>
+                    <li><a href="/hotel/contact">Contact us</a></li>
+                    <li><a href="/hotel/gallery" class="selectedlink">Gallery</a></li>
+                    <li><a href="/hotel/testimonial">Testimonial</a></li>
+                </ul>
+            </div>
+            <div class="btns">
+                <button class="register"><a href="/user/register">Register</a></button>
+                <button class="signin"><a href="/user/signin">Sign in</a></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- gallery -->
+    <div class="titlee">
+        <p>Gallery</p>
+    </div>
+    <div class="wrapper">
+        <div class="gallery">
+            <div class="image"><span><img src="/Images/gone.jpeg" alt=""></span></div>
+            <div class="image"><span><img src="/Images/gtwo.jpeg" alt=""></span></div>
+            <div class="image"><span><img src="/Images/gthree.jpeg" alt=""></span></div>
+            <div class="image"><span><img src="/Images/gfour.jpeg" alt=""></span></div>
+            <div class="image"><span><img src="/Images/five.png" alt=""></span></div>
+            <div class="image"><span><img src="/Images/six.png" alt=""></span></div>
+            <div class="image"><span><img src="/Images/seven.png" alt=""></span></div>
+            <div class="image"><span><img src="/Images/eight.png" alt="no"></span></div>
+        </div>
+    </div>
+    <div class="button">
+        <button id="view-more-btn">View more</button>
+        <button id="view-less-btn" style="display: none;">
+            <p>View less</p>
+        </button>
+    </div>
+
+
+    <%- include('./Partials/footer') %>
+        <script src="/JS/nav.js"></script>
+        <script src="/JS/gallery.js"></script>
+
+</body>
+
+</html>
